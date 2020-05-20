@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brrrr Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+                <h1 class="mx-auto" style="color: white">Brrrr Calculator</h1>
+            </nav>
+
+            <div class="container">
+                <form>
+                    <div class="row">
+                    <div class="col-sm">
+                        <fieldset>
+                            <legend style="font-weight: bold;">Acquisition</legend>
+                            <label for="tax">Annual Property Tax</label><br>
+                            <input class="mb-3" type="text" name="tax" id="tax" ><br>
+                            <label for="price">Purchase Price</label><br>
+                            <input class="mb-3" type="text" name="price" id="price" ><br>
+                            <label for="closing">Purchase Closing Cost</label><br>
+                            <input class="mb-3" type="text" name="closing" id="closing" ><br>
+                            <label for="repair">Estimated Repair Cost</label><br>
+                            <input class="mb-3" type="text" name="repair" id="repair" ><br>
+                            </fieldset>
+                            <br>                   
+                    </div>
+                    <div class="col-sm">
+                        <fieldset>
+                            <legend style="font-weight: bold;">Refinance</legend>             
+                            <label for="loan">Loan Amount</label><br>
+                            <input class="mb-3" type="text" name="loan" id="loan" ><br>
+                            <label for="interest">Loan Interest Rate (%)</label><br>
+                            <input class="mb-3" type="text" name="interest" id="interest" ><br>
+                            <label for="fees">Other Closing Costs or Fees</label><br>
+                            <input class="mb-3" type="text" name="fees" id="fees"><br>
+                            <label for="arv">After Repair Value</label><br>
+                            <input class="mb-3" type="text" name="arv" id="arv" ><br>
+                            <label for="amort">Amortized Over How Many Years?</label><br>
+                            <input class="mb-3" type="text" name="amort" id="amort" ><br>
+                            <label for="rehab-time">Estimated Rehab Time in Months</label><br>
+                            <input class="mb-3" type="text" name="rehab-time" id="rehab-time" ><br>
+                            <label for="seasoning">Seasoning Period in Months</label><br>
+                            <input class="mb-3" type="text" name="seasoning" id="seasoning" ><br>
+                            </fieldset>
+                            <br>                    </div>
+                    <div class="col-sm">
+                        <fieldset>
+                            <legend style="font-weight: bold;">Monthly Income</legend>
+                            <label for="rent">Total Gross Monthly Rent</label><br>
+                            <input class="mb-3" type="text" name="rent" id="rent" ><br>                                       
+                        </fieldset>
+                        <br>
+        
+                        <fieldset>
+                            <legend style="font-weight: bold;">Monthly Expenses</legend>
+                            <label for="insurance">Monthly Insurance</label><br>
+                            <input class="mb-3" type="text" name="insurance" id="insurance" ><br>
+                            <label for="vacancy">Vacancy (%)</label><br>
+                            <input class="mb-3" type="text" name="vacancy" id="vacancy" value="5"><br>
+                            <label for="maint">Repairs and Maintenance (%)</label><br>
+                            <input class="mb-3" type="text" name="maint" id="maint" value="5"><br>
+                            <label for="capex">Capital Expenditures (%)</label><br>
+                            <input class="mb-3" type="text" name="capex" id="capex" value="5"><br>
+                            <label for="mgmt">Management Fees (%)</label><br>
+                            <input class="mb-3" type="text" name="mgmt" id="mgmt" value="10"><br>                                       
+                        </fieldset>
+                        <br>                    
+                    </div>
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm"></div>
+                        <div class="col-sm">
+                          <button id="submit" type="submit" class="btn btn-primary ml-5" data-toggle="modal" data-target="#exampleModal">
+                              Submit
+                          </button>
+                        </div>
+                        <div class="col-sm"></div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+            
+
+              
+              
+            
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Property Report</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+        </div> 
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="elements.js"></script>
+    <script src="calculations.js"></script>
+    <script src="app.js"></script>
+
+</html>
